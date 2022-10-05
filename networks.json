@@ -2,6 +2,9 @@
   "goerli": {
     "EAS": {
       "address": "0x709a967b00Cc7274281fe64f17Cd279a97A403F7"
+    },
+    "SchemaRegistry": {
+      "address": "0xB1B5824B318eC213c6207256ec702B0bd7656EFb"
     }
   }
 }

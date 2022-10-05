@@ -1,4 +1,4 @@
-specVersion: 0.0.1
+specVersion: 0.0.4
 schema:
   file: ./schema.graphql
 dataSources:
@@ -10,7 +10,7 @@ dataSources:
       abi: EAS
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.5
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       entities:
         - Attested
@@ -24,3 +24,22 @@ dataSources:
         - event: Revoked(indexed address,indexed address,bytes32,indexed bytes32)
           handler: handleRevoked
       file: ./src/eas.ts
+  - kind: ethereum
+    name: SchemaRegistry
+    network: goerli
+    source:
+      address: "0xB1B5824B318eC213c6207256ec702B0bd7656EFb"
+      abi: SchemaRegistry
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - Registered
+      abis:
+        - name: SchemaRegistry
+          file: ./abis/SchemaRegistry.json
+      eventHandlers:
+        - event: Registered(indexed bytes32,indexed uint256,bytes,address,address)
+          handler: handleRegistered
+      file: ./src/schema-registry.ts
