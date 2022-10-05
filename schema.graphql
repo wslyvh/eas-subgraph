@@ -1,7 +1,7 @@
 type Attestation @entity {
   id: ID!
   data: Bytes!
-  schema: ASSchema
+  schema: Schema
   recipient: Bytes! # address
   attester: Bytes! # address
   time: BigInt!
@@ -12,7 +12,7 @@ type Attestation @entity {
   txid: Bytes!
 }
 
-type ASSchema @entity {
+type Schema @entity {
   id: ID!
   schemaData: Bytes!
   schema: String!

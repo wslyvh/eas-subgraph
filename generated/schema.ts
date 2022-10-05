@@ -141,7 +141,7 @@ export class Attestation extends Entity {
   }
 }
 
-export class ASSchema extends Entity {
+export class Schema extends Entity {
   constructor(id: string) {
     super();
     this.set("id", Value.fromString(id));
@@ -149,18 +149,18 @@ export class ASSchema extends Entity {
 
   save(): void {
     let id = this.get("id");
-    assert(id != null, "Cannot save ASSchema entity without an ID");
+    assert(id != null, "Cannot save Schema entity without an ID");
     if (id) {
       assert(
         id.kind == ValueKind.STRING,
-        `Entities of type ASSchema must have an ID of type String but the id '${id.displayData()}' is of type ${id.displayKind()}`
+        `Entities of type Schema must have an ID of type String but the id '${id.displayData()}' is of type ${id.displayKind()}`
       );
-      store.set("ASSchema", id.toString(), this);
+      store.set("Schema", id.toString(), this);
     }
   }
 
-  static load(id: string): ASSchema | null {
-    return changetype<ASSchema | null>(store.get("ASSchema", id));
+  static load(id: string): Schema | null {
+    return changetype<Schema | null>(store.get("Schema", id));
   }
 
   get id(): string {

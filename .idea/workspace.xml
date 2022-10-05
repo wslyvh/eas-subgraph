@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e9aa103-205f-4b29-9267-b13d933199f5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/networks.json" beforeDir="false" afterPath="$PROJECT_DIR$/networks.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generated/schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/generated/schema.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schema.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/schema.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eas.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/eas.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/schema-registry.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/schema-registry.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/subgraph.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/subgraph.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +30,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="yarn" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -38,7 +42,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664981011204</updated>
-      <workItem from="1664981012297" duration="1001000" />
+      <workItem from="1664981012297" duration="1793000" />
     </task>
     <servers />
   </component>
