@@ -217,6 +217,15 @@ export class Schema extends Entity {
     this.set("index", Value.fromBigInt(value));
   }
 
+  get time(): BigInt {
+    let value = this.get("time");
+    return value!.toBigInt();
+  }
+
+  set time(value: BigInt) {
+    this.set("time", Value.fromBigInt(value));
+  }
+
   get txid(): Bytes {
     let value = this.get("txid");
     return value!.toBytes();

@@ -12,5 +12,6 @@ export function handleRegistered(event: RegisteredEvent): void {
   entity.txid = event.transaction.hash;
   entity.creator = event.params.attester.toHexString();
   entity.index = schema.index;
+  entity.time = event.block.timestamp;
   entity.save()
 }

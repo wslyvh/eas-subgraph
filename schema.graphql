@@ -19,5 +19,6 @@ type Schema @entity {
   creator: String! # address
   resolver: String!
   index: BigInt!
+  time: BigInt!
   txid: Bytes!
 }
